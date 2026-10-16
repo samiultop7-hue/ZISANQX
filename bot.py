@@ -5,8 +5,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# স্ক্রিনশট অনুযায়ী ডিফল্ট ভ্যালু সেট করা হলো
-TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "8924283996:AAGTMzubvZPFKBMvcfByQJLsGh5mQQTgw4Q")
+# তোমার আসল এবং সঠিক টোকেন এখানে বসানো হলো
+TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "8779274413:AAGQbqfdT5-P7v3Il1idrePrQENeTZK-9Ws")
 ADMIN_ID = int(os.getenv("ADMIN_TELEGRAM_ID", "7818003935"))
 VIP_CHAN = os.getenv("VIP_CHANNEL_ID", "-1004425913214")
 API = f"https://api.telegram.org/bot{TOKEN}"
@@ -600,7 +600,7 @@ def handle(up):
 
         elif "MONEY MANAGEMENT" in txt:
             if not is_vip:
-                send_msg(uid, "🔒 এই ফিচারটি শুধু প্রিমিয়াম মেম্বርদের জন্য। আনলক করতে <b>🔑 PREMIUM ACCESS</b> বাটন ব্যবহার করুন।", kb)
+                send_msg(uid, "🔒 এই ফিচারটি শুধু প্রিমিয়াম মেম্বারদের জন্য। আনলক করতে <b>🔑 PREMIUM ACCESS</b> বাটন ব্যবহার করুন।", kb)
                 return
             AWAIT_MM[uid] = True
             send_msg(uid, "💵 <b>আপনার বর্তমান কোটেক্স ব্যালেন্স কত ডলার লিখুন?</b>\n(যেমন: <code>50</code> বা <code>100</code> লিখে মেসেজ পাঠান)", kb)
