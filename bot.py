@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # স্ক্রিনশট অনুযায়ী ডিফল্ট ভ্যালু সেট করা হলো
-TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "8779274413:AAGQbafdT5-P7v3Il1idrePrQ")
+TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "8924283996:AAGTMzubvZPFKBMvcfByQJLsGh5mQQTgw4Q")
 ADMIN_ID = int(os.getenv("ADMIN_TELEGRAM_ID", "7818003935"))
 VIP_CHAN = os.getenv("VIP_CHANNEL_ID", "-1004425913214")
 API = f"https://api.telegram.org/bot{TOKEN}"
